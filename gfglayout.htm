@@ -33,12 +33,14 @@
                color: beige;
           }
 
-          .nav li {
+          .nav div {
                margin-left: 15px;
           }
 
           .container {
                display: flex;
+               flex-direction: row;
+               /* justify-content: space-between; */
 
           }
 
@@ -46,12 +48,51 @@
                display: flex;
                flex-direction: column;
                color: white;
+               width: 70%;
           }
 
+          .lefthead {
+               color: green;
+               font-size: 30px;
+               margin: 10px;
+          }
+
+          .image {
+               background-color: green;
+               color: white;
+               height: 100px;
+               width: 1000px;
+          }
+
+          .left1 div {
+               padding: 8px;
+          }
 
           .rightSide {
                color: white;
           }
+
+          .imager1 {
+               background-color: green;
+               color: white;
+               height: 100px;
+               width: 400px;
+          }
+
+          .rightSide div {
+               padding: 10px;
+          }
+
+          .lnk {
+               margin-top: 20px;
+               color: green;
+          }
+
+          .hrline {
+               width: 1000px;
+               height: 2px;
+          }
+
 
           @media only screen and (max-width: 400px) {
                .nav {
@@ -62,13 +103,28 @@
                }
           }
 
-          @media only screen and (max-width:400px) {
+
+
+          @media only screen and (max-width:1400px) {
                .container {
                     display: flex;
                     flex-direction: column;
                     width: 100%;
                }
           }
+
+          /* @media only screen and (max-width: 1400px) {
+               .container {
+                    display: flex;
+                    flex-direction: column;
+
+               }
+
+               .nav div {
+                    width: 100%;
+               }
+
+          } */
      </style>
 </head>
 
@@ -87,60 +143,41 @@
      <div class="container">
           <div class="leftContainer">
                <div class="left1">
-                    <h1>Left 1 Div</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laudantium soluta suscipit sunt
-                         illum
-                         numquam quae reprehenderit incidunt omnis facilis.</p>
+                    <div class="lefthead">HEADING</div>
+                    <div>Description</div>
+                    <div class="image">Image</div>
+                    <div>Anup Singh</div>
+                    <div>Hello Ji,</div>
 
                </div>
-               <div class="left2">
-                    <h1>Left 2 div</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officia perspiciatis
-                         voluptas
-                         error autem earum?</p>
+               <span class="hrline">
+                    <hr>
+               </span>
 
-               </div>
                <div class="left1">
-                    <h1>Left 1 Div</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laudantium soluta suscipit sunt
-                         illum
-                         numquam quae reprehenderit incidunt omnis facilis.</p>
+                    <div class="lefthead">HEADING</div>
+                    <div>Description</div>
+                    <div class="image">Image</div>
+                    <div>Anup Singh</div>
+                    <div>Hello Ji,</div>
 
                </div>
-               <div class="left2">
-                    <h1>Left 2 div</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officia perspiciatis
-                         voluptas
-                         error autem earum?</p>
-
-               </div>
-               <div class="left1">
-                    <h1>Left 1 Div</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laudantium soluta suscipit sunt
-                         illum
-                         numquam quae reprehenderit incidunt omnis facilis.</p>
-
-               </div>
-               <div class="left2">
-                    <h1>Left 2 div</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officia perspiciatis
-                         voluptas
-                         error autem earum?</p>
-
-               </div>
+               <span class="hrline">
+                    <hr>
+               </span>
           </div>
 
           <div class="rightSide">
-               <h1>What's New</h1>
-               <div class="one">Hello one</div>
-               <div class="two">Hello two</div>
-               <div class="three">Hello Three</div>
-               <div class="one">Hello one</div>
-               <div class="two">Hello two</div>
-               <div class="three">Hello Three</div>
-               <div class="one">Hello one</div>
-               <div class="two">Hello two</div>
-               <div class="three">Hello Three</div>
+               <h1 class="lefthead">What's New</h1>
+               <div class="imager1">Image</div>
+               <div>Course Details</div>
+               <div class="imager1">Image</div>
+               <div>Course Details</div>
+               <div class="imager1">Image</div>
+               <div>Course Details</div>
+
+               <h2 class="lnk">QUICK LINKS</h2>
+               <div>IMAGES</div>
           </div>
      </div>
 </body>
